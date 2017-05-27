@@ -1,0 +1,115 @@
+.feedback{
+	.feedback-item{
+		.suggest-type-list{
+		 .fs(14);
+		 .mt(5);
+		 .mb(5);
+		}
+		suggest-list-span{
+
+		background-color:@defaultColor;
+		}
+		.suggest-type-ul{
+		background-color:@defaultColor;
+		margin:0;
+		padding-left:10px;
+		list-style:none;
+			li{
+				margin-left:0;
+		        width:auto;
+				.h(20);
+				.lh(20);
+				border:1px solid @lineColor;
+				border-radius:4px;
+				padding:5px;
+				margin-right:5px;
+				&.active{
+				background-color:@headBgColor;
+				}
+			}
+
+		}
+	}
+
+	.suggest-content{
+	    .h(80);
+	    .mt(10px);
+	    position:relative;
+		.suggest-content-span{
+		.fs(14);
+		width:100%;
+		.h(20);
+
+		}
+		.suggest-content-input{
+		.mt(2);
+		 width:100%;
+		 .h(68);
+		 resize: none;
+		 border-style:none;
+		 .fs(12);
+		 padding:0;
+		word-break:break-all;
+		word-wrap: break-word;
+		overflow:hidden;
+		resize: none;
+		}
+		.ng-invalid{
+			&+span{
+		   		position:absolute;
+				color:@dangerColor;
+				right:5px;
+				top:15px;
+				height:100%;
+				text-align:right;
+				.fs(12px);
+				p{
+				margin:0;
+				}
+		}
+			
+
+		}
+	}
+
+	.your-contact{
+		position:relative;
+		.mt(10px);
+		width:100%;
+		.h(60);
+		position:relative;
+		.your-contact-span{
+		width:100%;
+		.h(20);
+		}
+		.your-contact-input{
+		    .mt(2);
+			width:100%;
+		    border-style:none;
+		    .h(30);
+		    .fs(12);
+		}
+
+		.ng-invalid{
+			&+span{
+		   		position:absolute;
+				color:@dangerColor;
+				right:5px;
+				top:18px;
+				height:100%;
+				text-align:right;
+				.fs(12px);
+				p{
+				margin:0;
+				}
+		}
+		}
+	}
+	.feedback-submit{
+	 width:100%;
+	 .h(35);
+	 bottom:0;
+	 color:@defaultColor;
+	 background-color:@headBgColor;
+	}
+}

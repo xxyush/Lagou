@@ -1,0 +1,23 @@
+"use strict";
+angular.module("myApp").directive("appPositionList",["$http",function($http){
+	return{
+	strict:"A",
+	templateUrl:"views/template/postionList.html",
+	replace:true,
+	scope:{
+		data:"=",
+		filterObj:"=",
+		isFavorite:"="
+	},
+	link:function(scope){
+		scope.select=function(item){
+			$http.post("data/favorite.json",{
+				id:item.id,
+				select:!item.select
+			}).then(function(resp){
+				item.select=!item.select;
+			});
+		}
+	}
+	}
+}]);

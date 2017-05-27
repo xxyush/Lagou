@@ -1,0 +1,80 @@
+.me{
+    height:90%;
+	.head-bg{
+	   .h(240);
+	   width:100%;
+	   background-color:#48D1CC;
+	}
+	.head-pic{
+		top:30px;
+		margin-left:auto;
+		margin-right:auto;
+		.w(80);
+		.h(80);
+		border-radius:50%;
+		&.login-pic{
+		    background-repeat:no-repeat;
+			.w(80);
+			.h(80);
+			background-image:url(../image/head.png);
+			background-size:cover;
+		}
+		&.noLogin{
+			.w(80);
+			.h(80);
+			background-image:url(../image/normal-head.jpg);
+			background-size:cover;
+
+		}
+	}
+	.user-name{
+		.fs(18);
+		top:45px;
+		color:@defaultColor;
+	}
+	.user-desc{
+	 top:55px;
+	 .fs(14);
+	 color:@defaultColor;
+	}
+	.btn{
+	      top:40;
+	    button{
+	    	color:@defaultColor;
+		    background-color:@headBgColor;
+		    .w(145);
+		    .ml(12);
+		    .mr(12);
+			&.logout-btn{
+				.mt(40);
+				.w(320);
+				background-color:red;
+		    }
+
+	}
+    }	
+	.login-btn{
+	.w(320);
+	.fs(16);
+	background-color:red;
+    color: @defaultColor;
+	}
+	.me-item{
+	  .fs(16);
+	  height:50%;
+	 span{
+	 margin-right:0;	  
+	   .h(40);
+	   .lh(40);
+	   .pl(20);
+	   background-color:@defaultColor;
+	   border-bottom:1px solid @listLineColor;
+
+	   &.resume{
+	    .h(45);
+	   .lh(45);
+	    .mb(5px);
+	   }	 
+	 }
+	}
+}

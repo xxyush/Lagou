@@ -1,0 +1,36 @@
+.position-list{
+	margin:0;
+	padding:0;
+	.item{
+	list-style:none;
+	border-bottom:1px solid @listLineColor;
+	padding:7px 0;
+	}
+	.logo{
+	 .w(65);
+	 .h(65);
+	 margin-right:13px;
+	 margin-left:4px;
+	}
+	.title{
+	margin:0;
+	}
+	.text{
+	margin:0;
+	}
+	.icon{
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	.w(30);
+	.h(28);
+	top:20px;
+	right:12px;
+	 &.star-active{
+		 background-image:url("../image/star-active.png");
+	 }
+	 &.star{
+	  background-image:url("../image/star.png");
+	 }
+	}
+}
+

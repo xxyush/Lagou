@@ -1,0 +1,12 @@
+<div class="me ta-c">
+	<div class="head-bg p-r ta-c">
+		<span class="d-b  p-r head-pic {{isLogin?'login-pic':'noLogin'}}"></span>
+		<span ng-if="isLogin" class="user-name p-r" ng-bind="name"></span>
+		<span ng-if="!isLogin" ui-sref="login" class="user-name p-r">登入/</span><span ng-if="!isLogin" ui-sref="register" class="user-name p-r">注册</span>
+		<span class="user-desc p-r d-b" ng-bind="message"></span>
+	</div>	
+	<div class="me-item ta-l">
+			<span class="d-b resume" ng-click="resume()">我的简历</span><span class="d-b" ng-click="goPost()">我的投递</span><span class="d-b" ng-click="goFavorite()">我的收藏</span><span class="d-b" ui-sref="feedback">意见反馈</span><span class="d-b" ui-sref="config">我的配置</span>
+	</div>
+</div>
+<div app-foot></div>
