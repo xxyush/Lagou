@@ -1,0 +1,10 @@
+<div class="login">
+    <span class="login-back p-a" ng-click="goback()">随便逛逛> </span>
+    <span class="d-b  p-r head-pic noLogin"></span>
+	<form class="d-b ta-c" name="form">
+		<div class="form-line ta-l p-r"><span class="icon account va-t d-ib"></span><input type="text" class="d-ib" name="phone" validator="phone,required" ng-model="user.phone" placeholder="输入手机号码"></div>
+		<div class="form-line ta-l p-r"><span class="icon lock va-t d-ib"></span><input type="password" class="d-ib" name="password" validator="password,required" ng-model="user.password" placeholder="输入密码"></div>
+		<button class="login-btn" ng-click="submit()" validation-submit="form">登入</button>
+		<button class="register-btn" ui-sref="register">注册</button>
+	</form>
+</div>

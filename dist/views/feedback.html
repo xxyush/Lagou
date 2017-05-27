@@ -1,0 +1,23 @@
+<div class="feedback">
+    <div app-header-bar header-text="意见反馈"></div>
+    <form class="feedback-item ta-l" name="form">
+
+		<div class="suggest-type-list">
+		<span class="suggest-list-span d-b">意见所属类别</span>
+		<ul class="suggest-type-ul">
+			<li class="suggest-type-list d-ib {{selectType===item.id?'active':''}}" ng-repeat="item in sgttype" ng-click="click(item)" ng-bind="item.name"></li>
+		</ul>
+		</div>
+
+		<div class="suggest-content">
+			<span class="suggest-content-span d-b">反馈内容</span>
+			<textarea ng-model="feedback.content" class="suggest-content-input d-b" validator="required" placeholder="反馈bug时，请描述具体操作步骤及问题"> </textarea>
+		</div>
+
+		<div class="your-contact">
+			<span class="your-contact-span d-b">你的联系方式</span>
+			<input class="your-contact-input d-b" ng-model="feedback.contact" type="text" name="" validator="required" placeholder="留下邮箱或者电话，方便我们联系你哦~">
+		</div>
+		<button ng-click="submit()" validation-submit="form" class="feedback-submit p-f">提交反馈</button>
+	</form >
+</div>

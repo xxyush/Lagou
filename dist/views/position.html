@@ -1,0 +1,12 @@
+<!-- 复用指令appHeaderBar与headerBar.html,指定不同的header-text显示不同的title -->
+<div app-header-bar header-text="职位详情"></div>
+<div app-position-info pos="pos"  isActive="isActive" is-login="isLogin"></div>
+<div app-company company="company"></div>
+<div class="bg-w postion-desc">
+	<h5>职位描述</h5>
+	<pre class="ta-l" position.description ng-bind="pos.description">
+	</pre>
+
+</div>
+
+<button ng-bind="message" ng-click="go()" class="bottom-btn"></button>

@@ -1,0 +1,3 @@
+html bind element between derective and controller
+tab-click="tClick(id,name)"  ==>ok
+tabClick="tClick(id,name)"   ==>No!
